@@ -25,13 +25,17 @@ import {MatButtonModule} from '@angular/material/button';//Buttons
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import { AddProductComponent } from './product-management/add-product/add-product.component';
+import { ViewProductComponent } from './product-management/view-product/view-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    AddProductComponent,
+    ViewProductComponent
   ],
   imports: [
     BrowserModule,
