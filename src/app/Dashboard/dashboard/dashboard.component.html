@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="row align-items-start mt-5">
     <div class="col-md-1"></div>
     <div class="col-md-10">
@@ -12,7 +13,7 @@
                             height="200px">
                     </mat-card-content>
                     <mat-card-actions style="align-items: center;">
-                        <button mat-button color="accent">
+                        <button  routerLink="/vieworders" mat-button color="accent">
                             View Orders
                         </button>
                         <button mat-button color="accent">
@@ -27,7 +28,7 @@
 
             </div>
             <div class="col-md-4">
-                <a routerLink="/addProduct">
+                <a>
                     <mat-card class="card">
                         <mat-card-title style="text-align:center;">
                             <h2>Product Management</h2>
@@ -39,10 +40,10 @@
 
                         <mat-card-actions>
 
-                            <button mat-button color="accent">
+                            <button routerLink="/viewProduct" mat-button color="accent">
                                 View Products
                             </button>
-                            <button mat-button color="accent">
+                            <button routerLink="/addProduct" mat-button color="accent">
                                 Add Products
                             </button>
                         </mat-card-actions>

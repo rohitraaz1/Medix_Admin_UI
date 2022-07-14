@@ -5,6 +5,7 @@
 tr, td {
     padding: 10px;
   }
-  .full-width{
-    width: 100%;
+
+  .bg{
+    height: 100vh;
   }

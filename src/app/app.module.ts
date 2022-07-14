@@ -27,6 +27,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { AddProductComponent } from './product-management/add-product/add-product.component';
 import { ViewProductComponent } from './product-management/view-product/view-product.component';
+import { ViewOrdersComponent } from './order-management/view-orders/view-orders.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ViewProductComponent } from './product-management/view-product/view-pro
     NavbarComponent,
     LoginComponent,
     AddProductComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    ViewOrdersComponent
   ],
   imports: [
     BrowserModule,
