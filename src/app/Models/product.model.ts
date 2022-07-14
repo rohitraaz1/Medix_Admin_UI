@@ -18,6 +18,8 @@ export interface SubCategories{
 // //prod_Cost_Price:number;
 // img:string;
 // prod_In_Stock:number;
+
+//for creating product 
 export interface Product{
     Name?:string;
     Price?:string; 
@@ -27,5 +29,20 @@ export interface Product{
     CategoriesId?:string; 
     SubCategoriesId?:string;
     ImageUrl?:File; 
+}
+
+//for getting product
+export interface GetProduct{
+    Id:string;
+    Name:string;
+    Price:string; 
+    Quantity:string;
+    Vendor?:string;
+    Descriptions?:string;
+    CategoriesId?:string; 
+    Category?:string;
+    SubCategoriesId?:string;
+    SubCategories?:string;
+    ImageUrl?:string; 
 }
              

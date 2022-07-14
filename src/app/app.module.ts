@@ -13,6 +13,8 @@ import { NavbarComponent } from './Dashboard/navbar/navbar.component';
 import { LoginComponent } from './Authorization _Screens/login/login.component';
 
 
+//Datatables
+import { DataTablesModule } from 'angular-datatables';
 
 
 //Material Modules
@@ -44,6 +46,7 @@ import { ViewOrdersComponent } from './order-management/view-orders/view-orders.
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    DataTablesModule,
     ReactiveFormsModule,
     MatCardModule,
     MatFormFieldModule,

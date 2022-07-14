@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Product } from 'src/app/Models/product.model';
+import { GetProduct, Product } from 'src/app/Models/product.model';
 import { baseUrl } from '../baseUrl';
 
 @Injectable({
@@ -16,13 +16,13 @@ export class ProductService {
 
   
   //Get Products
-  getProducts():Observable<Product[]>{
+  getProducts():Observable<GetProduct[]>{
     const url = baseUrl + 'api/Products';
     const headers = {
       'Content-Type': 'application/json',
       Authorization: this.mediX_token,
     };
-    return this._http.get<Product[]>(url,{headers});
+    return this._http.get<GetProduct[]>(url,{headers});
   }
 
   //Add Product
@@ -46,8 +46,8 @@ export class ProductService {
   }
 
   //Delete Product
-  deleteProduct(prod_Id:string):Observable<any>{
-    const url = baseUrl + 'api/Products/' + prod_Id;
+  deleteProduct(Id:string):Observable<any>{
+    const url = baseUrl + 'api/Products/' + Id;
     const headers = {
       'Content-Type': 'application/json',
       Authorization: this.mediX_token,
